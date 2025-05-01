@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>緑橋美容室 予約管理システム Ver.1.00</title>
+    <title>ご来店予約を管理する</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
@@ -17,7 +17,18 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid">
-                <div class="navbar-brand">緑橋美容室 予約管理システム Ver.1.00</div>
+                <div class="navbar-brand">🗓️ ご来店予約を管理する</div>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="ナビゲーションバーの切替">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+                        <li class="nav-item">
+                            <a class="nav-link" href="." data-bs-toggle="modal">トップページへ戻る</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
@@ -26,12 +37,12 @@
             <div class="row">
                 <div class="col-sm-4 mb-4 mb-sm-4">
                     <div class="card">
-                        <a href="#outside" data-bs-toggle="modal"><img src="./pic/メモ.jpg" class="card-img-top"
-                                alt="お客様を管理する" /></a>
+                        <a href="#outside" data-bs-toggle="modal"><img src="./pic/対話2.jpg" class="card-img-top"
+                                alt="予約状況を確認する" /></a>
                         <div class="card-body">
-                            <h5 class="card-title">お客様を管理する</h5>
+                            <h5 class="card-title">予約状況を確認する</h5>
                             <p class="card-text">
-                                新規ご入会のお客様情報を登録したり、既存のお客様情報の確認、および修正や退会の手続きを行います。
+                                お客様・日付・スタイリストの予約状況を確認します。予約内容の修正や、取り消しもこの画面から行います。
                             </p>
                             <div class="d-grid gap-2">
                                 <a href="#outside" data-bs-toggle="modal" class="btn btn-primary btn-lg">開始する</a>
@@ -39,49 +50,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4 mb-4 mb-sm-4">
+                <div class="col-sm-4">
                     <div class="card">
-                        <a href="./yoyakutop.html"><img src="./pic/ヘアカット1.jpg" class="card-img-top"
-                                alt="ご来店予約を管理する" /></a>
+                        <a href="NewResavation_SelectMember.php"><img src="./pic/ヘアカット2.jpg" class="card-img-top"
+                                alt="新しい予約を受け付ける" /></a>
                         <div class="card-body">
-                            <h5 class="card-title">ご来店予約を管理する</h5>
+                            <h5 class="card-title">新しい予約を受け付ける</h5>
                             <p class="card-text">
-                                新規予約を受け付けたり、予約状況の確認、および修正や予約取り消しを行います。
+                                ご希望日や、希望のスタイリストの空き状況を確認しながら、ご来店の予約を行います。
                             </p>
                             <div class="d-grid gap-2">
-                                <a href="./yoyakutop.html" class="btn btn-success btn-lg">開始する</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 mb-4 mb-sm-4">
-                    <div class="card">
-                        <a href="#outside" data-bs-toggle="modal"><img src="./pic/対話1.jpg" class="card-img-top"
-                                alt="予約状況から分析する" /></a>
-                        <div class="card-body">
-                            <h5 class="card-title">予約状況から分析する</h5>
-                            <p class="card-text">
-                                日付や曜日、スタイリストによる混雑状況等を分析することで、今後の戦略に活かします。
-                            </p>
-                            <div class="d-grid gap-2">
-                                <a href="#outside" data-bs-toggle="modal" class="btn btn-info btn-lg">開始する</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 mb-4 mb-sm-4">
-                    <div class="card">
-                        <a href="#outside" data-bs-toggle="modal"><img src="./pic/事務作業1.jpg" class="card-img-top"
-                                alt="管理者モード" /></a>
-                        <div class="card-body">
-                            <h5 class="card-title">管理者モード</h5>
-                            <p class="card-text">
-                                マスターメンテナンス等、特別な操作を行う画面です。操作には専用のアカウントが必要です。
-                            </p>
-                            <div class="d-grid gap-2">
-                                <a href="#outside" data-bs-toggle="modal" class="btn btn-secondary btn-lg">開始する</a>
+                                <a href="NewResavation_SelectMember.php" class="btn btn-success btn-lg">開始する</a>
                             </div>
                         </div>
                     </div>
