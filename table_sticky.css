@@ -1,0 +1,42 @@
+.table-wrapper {
+    /*table全体のラッパー。スクロールを表示する*/
+    max-height: 500px;
+    overflow: scroll;
+}
+
+.th_sticky {
+    background-color: #f8f9fa;
+    /* bg-light相当 */
+    position: sticky;
+    top: -1px;
+    z-index: 2;
+}
+
+table {
+    position: relative;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    white-space: nowrap;
+    padding: 20px;
+}
+
+th {
+    position: sticky;
+    top: -1px;
+    z-index: 2;
+}
+
+th:first-of-type {
+    left: 0;
+    z-index: 3;
+}
+
+tbody tr td:first-of-type {
+    /*最初の要素を固定する*/
+    background-color: #eee;
+    position: sticky;
+    left: -1px;
+}
